@@ -1,0 +1,42 @@
+.container {
+  margin: 20px auto;
+  width: 600px;
+  padding: 0px 20px 20px 20px;
+  border: 1px dotted black;
+}
+th {
+  text-align: left;
+}
+
+#bottom {
+  background-color: red;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}
+
+.warning, #footer {
+  text-align: center;
+}
+
+#footer li{
+  display: inline;
+  padding: 5px;
+}
+
+li {
+  position: relative;
+}
+.preview {
+  position: absolute;
+  width: 300px;
+  top: -25px;
+  left: -300px;
+  background: #201937;
+  color: #fff;
+  border-radius: 20px;
+  border: 1px solid #999;
+  padding: 10px;
+  text-align: center;
+  z-index: 99999;
+}

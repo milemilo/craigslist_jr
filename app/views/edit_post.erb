@@ -1,0 +1,13 @@
+ <h3>Edit Post </h3>
+  <form action="/edit_post/<%=@post.id%>" method="post">
+  <label for="title">Title</label>
+  <input type="text" name="title">
+    <p></p>
+  <label for="price">Price</label>
+  <input type="number" name="price">
+    <p></p>
+    <label>Location</label>
+  <input type="text" name="location">
+  <input type="submit" value="Change it!">
+
+  </form>

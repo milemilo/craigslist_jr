@@ -1,0 +1,26 @@
+<% content_for :javascripts do %>
+$('li .preview').hide();
+$('li a').hover(function() {
+  $(this).parent().children(".preview").show("fade");
+}, function() {
+  $(this).parent().children(".preview").hide("fade");
+});
+<% end %>
+
+<div class="container">
+  <h2>Welcome!</h2>
+  <p></p>
+  <ul>
+  <% @category_list.each do |category| %>
+    <li id="category_<%=category.id%>">
+      <a href="category/<%=category.id%>"><%= category.title%></a>
+      <div class="preview">
+        <p>
+          Hello there! You've moused over the <%= category.title %> preview!
+        </p>
+        <img src="http://placekitten.com/200/300" />
+      </div>
+    </li>
+  <% end %>
+  </ul>
+</div>
